@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gihyeon_portfolio/widget/top_section/top_section_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,6 +31,14 @@ class MainApp extends StatefulWidget {
 class _MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: const [
+            TopSection(),
+          ],
+        ),
+      ),
+    );
   }
 }
