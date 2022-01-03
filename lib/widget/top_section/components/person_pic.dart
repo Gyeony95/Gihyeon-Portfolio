@@ -9,7 +9,7 @@ class PersonPic extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       constraints: const BoxConstraints(maxWidth: 639, maxHeight: 860),
-      child: Image.asset("assets/images/gihyeon.png"),
+      child: Image.asset("assets/images/gihyeon.png", width: 800,),
     );
   }
 }

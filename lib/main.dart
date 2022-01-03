@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gihyeon_portfolio/util/constants.dart';
+import 'package:gihyeon_portfolio/widget/about/about_section.dart';
 import 'package:gihyeon_portfolio/widget/top_section/top_section_widget.dart';
 
 void main() {
@@ -34,8 +36,11 @@ class _MainAppState extends State<MainApp> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
-          children: const [
-            TopSection(),
+          children:  [
+            const TopSection(),
+            const SizedBox(height: kDefaultPadding * 2),
+            AboutSection(),
+
           ],
         ),
       ),
